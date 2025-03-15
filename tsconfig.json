@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "rootDir": "./",
+    "baseUrl": "./",    
+    "paths": {
+      "@features/*": ["src/tests/features/*"],
+      "@steps/*": ["src/tests/steps/*"],
+      "@pages/*": ["src/tests/pages/*"],
+      "@utils/*": ["src/utils/*"],
+      "@generators/*": ["src/generators/*"],
+      "@data/*": ["src/data/*"],
+    }
+  }
+}

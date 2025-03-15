@@ -1,0 +1,25 @@
+{
+  "name": "auto-test-research",
+  "version": "1.0.0",
+  "description": "---",
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf node_modules",
+    "test": "",
+    "test:cucumber": "cucumber-js --require-module ts-node/register --require-module tsconfig-paths/register",
+    "test:playwright": "npx playwright test",
+    "cucumber:debug": "npx cucumber-js --format json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.13.10",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.2"
+  }
+}
